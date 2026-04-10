@@ -16,12 +16,21 @@
     <nav class="nav" id="nav">
         <div class="nav-inner">
             <a href="#" class="nav-logo">
-                <img src="logo-grupo-aia.png" alt="Grupo AIA" class="logo-img">
+                <img src="logo-grupo-aia.svg" alt="Grupo AIA" class="logo-img">
             </a>
             <div class="nav-links" id="navLinks">
                 <a href="#nosotros" class="nav-link">Nosotros</a>
                 <a href="#servicios" class="nav-link">Soluciones</a>
-                <a href="#industrias" class="nav-link">Industrias</a>
+                <div class="nav-dropdown">
+                    <a href="#industrias" class="nav-link">Industrias <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="industrias/biotech.html">Biotech</a>
+                        <a href="industrias/banca.html">Banca</a>
+                        <a href="industrias/energia.html">Energía</a>
+                        <a href="industrias/retail.html">Retail</a>
+                        <a href="industrias/salud.html">Salud</a>
+                    </div>
+                </div>
                 <a href="#tecnologia" class="nav-link">Tecnología</a>
                 <a href="#casos" class="nav-link">Casos de uso</a>
                 <a href="#contacto" class="nav-link">Contacto</a>
@@ -82,6 +91,27 @@
         </div>
     </section>
 
+    <!-- Clients Logos -->
+    <section class="section-clients">
+        <div class="container">
+            <p class="clients-label">Confían en nosotros</p>
+            <div class="clients-logos">
+                <div class="client-logo-item">
+                    <span class="client-name">Inditex</span>
+                </div>
+                <div class="client-logo-item">
+                    <span class="client-name">Carrefour</span>
+                </div>
+                <div class="client-logo-item">
+                    <span class="client-name">Eroski</span>
+                </div>
+                <div class="client-logo-item">
+                    <span class="client-name">Desigual</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About / Nosotros -->
     <section class="section" id="nosotros">
         <div class="container">
@@ -124,6 +154,60 @@
                             <h4>Equipo PhD</h4>
                             <p>Físicos, matemáticos e ingenieros de primer nivel</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Values -->
+            <div class="values-grid">
+                <div class="value-item">
+                    <div class="value-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <h4>Excelencia técnica</h4>
+                    <p>Ciencia rigurosa aplicada con los más altos estándares</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h4>Rigor metodológico</h4>
+                    <p>Procesos auditables, transparentes y reproducibles</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                    <h4>Orientación a resultados</h4>
+                    <p>Soluciones que generan impacto real y medible</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h4>Confianza y colaboración</h4>
+                    <p>Relaciones de largo plazo basadas en la transparencia</p>
+                </div>
+            </div>
+
+            <!-- Collaboration Model -->
+            <div class="collab-section">
+                <h3 class="collab-title">Cómo trabajamos contigo</h3>
+                <div class="collab-grid">
+                    <div class="collab-card">
+                        <span class="collab-number">01</span>
+                        <h4>Proyectos concretos</h4>
+                        <p>Resolución de problemas específicos con impacto directo y medible.</p>
+                    </div>
+                    <div class="collab-card">
+                        <span class="collab-number">02</span>
+                        <h4>Equipos estables</h4>
+                        <p>Integración técnica continua en tu organización.</p>
+                    </div>
+                    <div class="collab-card">
+                        <span class="collab-number">03</span>
+                        <h4>Joint ventures</h4>
+                        <p>Alianzas estratégicas para co-crear soluciones de alto impacto.</p>
                     </div>
                 </div>
             </div>
@@ -229,7 +313,7 @@
                 <h2 class="section-title">Impacto en los sectores<br><span class="text-accent">que mueven el mundo</span></h2>
             </div>
             <div class="industries-grid">
-                <div class="industry-card">
+                <a href="industrias/banca.html" class="industry-card industry-card-link">
                     <div class="industry-icon-wrap">
                         <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M2 10h20"/><path d="M6 14h4"/></svg>
                     </div>
@@ -239,8 +323,9 @@
                         <span class="product-tag">NeoPolar</span>
                         <span class="product-tag">SIOPEIA GEB</span>
                     </div>
-                </div>
-                <div class="industry-card">
+                    <span class="industry-link-arrow">Ver más &rarr;</span>
+                </a>
+                <a href="industrias/energia.html" class="industry-card industry-card-link">
                     <div class="industry-icon-wrap">
                         <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
                     </div>
@@ -250,41 +335,45 @@
                         <span class="product-tag">HELM&trade;-Flow</span>
                         <span class="product-tag">AGORA</span>
                     </div>
-                </div>
-                <div class="industry-card">
+                    <span class="industry-link-arrow">Ver más &rarr;</span>
+                </a>
+                <a href="industrias/retail.html" class="industry-card industry-card-link">
                     <div class="industry-icon-wrap">
                         <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
                     </div>
                     <h3>Retail</h3>
-                    <p>Geomarketing para ubicación de tiendas, forecasting de ventas y recomendación inteligente de productos.</p>
+                    <p>Forecasting, pricing, recomendación y optimización logística para el día a día del comercio.</p>
                     <div class="industry-products">
                         <span class="product-tag">Sales Forecasting</span>
-                        <span class="product-tag">Geomarketing</span>
+                        <span class="product-tag">Pricing</span>
                     </div>
-                </div>
-                <div class="industry-card">
+                    <span class="industry-link-arrow">Ver más &rarr;</span>
+                </a>
+                <a href="industrias/salud.html" class="industry-card industry-card-link">
                     <div class="industry-icon-wrap">
                         <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
                     </div>
-                    <h3>Salud & Biotech</h3>
-                    <p>Herramientas de decisión clínica, clasificación de pacientes y diseño de moléculas terapéuticas.</p>
+                    <h3>Salud</h3>
+                    <p>Prevención, predicción, soporte a decisión clínica y gestión sanitaria basada en datos.</p>
                     <div class="industry-products">
                         <span class="product-tag">Clinical AI</span>
-                        <span class="product-tag">siRNA Tools</span>
+                        <span class="product-tag">Patient Models</span>
                     </div>
-                </div>
-                <div class="industry-card industry-card-wide">
+                    <span class="industry-link-arrow">Ver más &rarr;</span>
+                </a>
+                <a href="industrias/biotech.html" class="industry-card industry-card-link industry-card-wide">
                     <div class="industry-icon-wrap">
-                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
                     </div>
-                    <h3>Aeroespacial, Telecom, Media & RRHH</h3>
-                    <p>Sistemas de potencia autónomos, detección de comportamiento de clientes, caracterización de usuarios y descubrimiento de talento con IA.</p>
+                    <h3>Biotech & Biología Molecular</h3>
+                    <p>Plataformas de descubrimiento in silico, cribado molecular, diseño de terapias RNA y análisis de datos ómicos con IA.</p>
                     <div class="industry-products">
-                        <span class="product-tag">Aerospace</span>
-                        <span class="product-tag">Telecom</span>
-                        <span class="product-tag">HR Tech</span>
+                        <span class="product-tag">siRNA Design</span>
+                        <span class="product-tag">Molecular Screening</span>
+                        <span class="product-tag">Omics Analytics</span>
                     </div>
-                </div>
+                    <span class="industry-link-arrow">Ver más &rarr;</span>
+                </a>
             </div>
         </div>
     </section>
@@ -338,9 +427,23 @@
                         <div class="tech-item">
                             <div class="tech-item-header">
                                 <div class="tech-dot"></div>
+                                <h4>IA Generativa & LLMs</h4>
+                            </div>
+                            <p>Modelos de lenguaje y generación de contenido para automatizar procesos complejos.</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-header">
+                                <div class="tech-dot"></div>
                                 <h4>Intelligent Observation</h4>
                             </div>
                             <p>Sistemas IOS para monitorización inteligente y detección en tiempo real.</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-header">
+                                <div class="tech-dot"></div>
+                                <h4>Simuladores predictivos</h4>
+                            </div>
+                            <p>Gemelos digitales y simulación avanzada para anticipar escenarios operativos.</p>
                         </div>
                     </div>
                 </div>
@@ -402,6 +505,109 @@
                 <button class="case-dot" data-index="1"></button>
                 <button class="case-dot" data-index="2"></button>
                 <button class="case-dot" data-index="3"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="section" id="beneficios">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Beneficios</span>
+                <h2 class="section-title">Lo que la IA puede hacer<br><span class="text-accent">por tu organización</span></h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <h4>Anticipar escenarios</h4>
+                    <p>Modelos predictivos que permiten actuar antes de que el problema ocurra.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                    </div>
+                    <h4>Optimizar operaciones</h4>
+                    <p>Algoritmos que mejoran procesos, reducen ineficiencias y maximizan recursos.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h4>Reducir costes</h4>
+                    <p>Automatización inteligente que elimina tareas manuales y errores costosos.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <h4>Personalizar experiencias</h4>
+                    <p>Conocer a cada cliente para ofrecer exactamente lo que necesita.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h4>Detectar riesgos</h4>
+                    <p>Sistemas de alerta temprana para fraude, anomalías y amenazas.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+                    </div>
+                    <h4>Decisiones basadas en datos</h4>
+                    <p>De la intuición a la evidencia: datos que guían la estrategia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Differentiators -->
+    <section class="section section-alt" id="diferenciadores">
+        <div class="container">
+            <div class="diff-layout">
+                <div class="diff-left">
+                    <span class="section-tag">Por qué AIA</span>
+                    <h2 class="section-title">Lo que nos hace<br><span class="text-accent">diferentes</span></h2>
+                    <p class="diff-desc">No somos una consultora más. Somos científicos que resuelven problemas de negocio con las herramientas más avanzadas del mercado.</p>
+                </div>
+                <div class="diff-right">
+                    <div class="diff-item">
+                        <span class="diff-number">35+</span>
+                        <div>
+                            <h4>Años desarrollando IA</h4>
+                            <p>Desde 1988 en la frontera de la inteligencia artificial aplicada.</p>
+                        </div>
+                    </div>
+                    <div class="diff-item">
+                        <span class="diff-number">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </span>
+                        <div>
+                            <h4>Equipos especializados por sector</h4>
+                            <p>PhDs y expertos con conocimiento profundo de cada industria.</p>
+                        </div>
+                    </div>
+                    <div class="diff-item">
+                        <span class="diff-number">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </span>
+                        <div>
+                            <h4>Innovación constante</h4>
+                            <p>Inversión continua en I+D que nos permite aplicar lo último antes que nadie.</p>
+                        </div>
+                    </div>
+                    <div class="diff-item">
+                        <span class="diff-number">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </span>
+                        <div>
+                            <h4>Soluciones a medida</h4>
+                            <p>Cada proyecto se diseña desde la comprensión profunda de tu problema específico.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -497,30 +703,30 @@
         <div class="container">
             <div class="footer-top">
                 <div class="footer-brand">
-                    <img src="logo-grupo-aia.png" alt="Grupo AIA" class="footer-logo">
+                    <img src="logo-grupo-aia-white.png" alt="Grupo AIA" class="footer-logo">
                     <p>Algoritmos para un mundo mejor</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-col">
-                        <h5>Soluciones</h5>
-                        <a href="#">Customer Intelligence</a>
-                        <a href="#">Compliance & Seguridad</a>
-                        <a href="#">Advanced Analytics</a>
-                        <a href="#">Energía & Grid</a>
-                    </div>
-                    <div class="footer-col">
-                        <h5>Productos</h5>
-                        <a href="#">HELM&trade;-Flow</a>
-                        <a href="#">AGORA</a>
-                        <a href="#">NeoPolar</a>
-                        <a href="#">SIOPEIA GEB</a>
+                        <h5>Industrias</h5>
+                        <a href="industrias/biotech.html">Biotech</a>
+                        <a href="industrias/banca.html">Banca</a>
+                        <a href="industrias/energia.html">Energía</a>
+                        <a href="industrias/retail.html">Retail</a>
+                        <a href="industrias/salud.html">Salud</a>
                     </div>
                     <div class="footer-col">
                         <h5>Empresa</h5>
-                        <a href="#">Sobre AIA</a>
-                        <a href="#">Talento</a>
-                        <a href="#">RSC</a>
-                        <a href="#">Noticias</a>
+                        <a href="#nosotros">Quiénes somos</a>
+                        <a href="#servicios">Soluciones</a>
+                        <a href="#casos">Casos de uso</a>
+                        <a href="#contacto">Contacto</a>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Contacto</h5>
+                        <a href="tel:+34935044900">+34 93 504 49 00</a>
+                        <a href="mailto:info@aia.es">info@aia.es</a>
+                        <a href="https://www.linkedin.com/company/aplicaciones-en-informatica-avanzada" target="_blank" rel="noopener">LinkedIn</a>
                     </div>
                 </div>
             </div>
